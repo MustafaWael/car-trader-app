@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import { Head } from "next/head";
 import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import InputLabel from "@material-ui/core/InputLabel";
@@ -56,6 +57,9 @@ const Search = ({ makes, models, singleColumn }) => {
 
   return (
     <>
+    <Head>
+      <meta name="google-site-verification" content="LXQPnPe6B7rtQCd_ac1V5ztCtck7Xe-_KzG8OaTO7Dk" />
+    </Head>
       <form onSubmit={handleSubmit(onSubmit)}>
         <Paper elevation={5} className={classes.paper}>
           <Grid container spacing={3}>
